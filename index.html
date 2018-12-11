@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image⁄x-icon" href="./RE/D11.png">
+	<title>MONSTERS UNIVERSITY</title>
+	<style>
+	*{
+	padding:0;
+	margin:0;
+    }
+
+    .clear{
+	clear:both;
+    }
+
+    body{
+	background-color: #F0FFFF;
+	font-family:'돋움;'
+	font-size: 14px;
+	color: #444444;
+    }
+
+   li{ 
+    list-style-type:none;
+   }
+
+    #menus{
+	float: right;
+	margin-top:10px;
+	/*border: solid 1px blue;*/
+    }
+
+    #menus li{
+		display: inline;
+		color: #1155DD;
+	}
+
+    .item{
+		margin:0 20px 0 20px;
+		text-decoration: none;
+	}
+
+	#signin{
+		margin-top: 15px;
+		color: #1155DD;
+		text-decoration: none;
+	}
+
+		#signin2{
+		margin-top: 15px;
+		margin-right: 35px;
+		color: #1155DD;
+		text-decoration: none;
+	}
+
+	#main_menu{
+	margin-top:25px;
+	margin-right: 10px;
+	/*border: solid 1px purple;*/
+    }
+
+    #main_menu li{
+	display:inline;
+	margin-left:80px;
+    }
+
+#top_menu{
+	text-align:right;
+	margin-top:20px;
+	/*border:solid;*/
+    }
+
+#logo{
+	float:left;
+	margin: 17px 0 0 10px;
+	/*border: solid 1px red;*/
+    }
+
+
+		section{
+		float:left;
+		margin-top: 10px;
+	}
+
+	aside{
+		float:left;
+		margin-left:20px;
+		margin-top:10px;
+	}
+	aside li{
+		margin-bottom: px;
+	}
+
+	footer{
+	width: 99%;
+	height: 150px;
+	margin-top: 20px;
+	background-color: #3366DD;
+}
+
+#footer_box{
+	width: 1140px;
+	height: : 200px;
+	margin: 10px auto;
+	/*border: solid 1px green;*/
+}
+
+#footer_logo{
+	float: left;
+	margin: 30px 0 20px 0;
+	/*border: solid 1px red;*/
+    }
+
+#address{
+	float:right;
+	margin: 30px 100px 10px 0;
+	color: white;
+	/*border:solid 0px red;*/
+    }
+
+
+
+
+
+    #slide{width:950px; height:590px;position:relative;overflow:hidden;}
+	#slide ul{width:400%;height:100%;transition:1s;}
+	#slide ul:after{content:"";display:block;clear:both;}
+	#slide li{float:left;width:25%;height:100%;}
+	#slide li:nth-child(1){background:#faa;}
+	#slide li:nth-child(2){background:#ffa;}
+	#slide li:nth-child(3){background:#faF;}
+	#slide li:nth-child(4){background:#aaf;}
+	#slide input{display:none;}
+	#slide label{display:inline-block;vertical-align:middle;width:10px;height:10px;border:2px solid #666;background:#fff;transition:0.3s;border-radius:50%;cursor:pointer;}
+	#slide .pos{text-align:center;position:absolute;bottom:10px;left:0;width:100%;text-align:center;}
+	#pos1:checked~ul{margin-left:0%;}
+	#pos2:checked~ul{margin-left:-100%;}
+	#pos3:checked~ul{margin-left:-200%;}
+	#pos4:checked~ul{margin-left:-300%;}
+	#pos1:checked~.pos>label:nth-child(1){background:#666;}
+	#pos2:checked~.pos>label:nth-child(2){background:#666;}
+	#pos3:checked~.pos>label:nth-child(3){background:#666;}
+	#pos4:checked~.pos>label:nth-child(4){background:#666;}
+
+	 /*               */
+
+	 #page{
+    	width:1200px;
+    	margin:auto;
+    	//border: solid 1px red;
+    }
+
+</style>
+</head>
+
+
+
+<body>
+	<div id='page'>
+	<header>
+	<div id='logo'>
+		<a href ='index.html'><img src='./RE/logo.png' width='300'></a>
+	</div>
+	<nav id='menus'>
+		<div id='top_menu'>
+			<li class='item'><a id='signin' href ='Signin.html'>Sign in</a></li>
+			<li>│</li>
+			<li class='item'><a id='signin' href ='Signup.html'>Register</a></li>
+			<li>│</li>
+			<li class='item'><a id='signin' href ='Helpdesk.html'>Help</a></li>
+			<li>│</li>
+			<li class='item'><a id='signin' href ='index.html'>HOME</a></li>
+	<li>│</li>
+		</div>
+		<ul id='main_menu'>
+			<a id='signin2' href ='View.html'><img src='./RE/1.png' width ='150' height="40"></a>
+			<a id='signin' href ='Greek.html'><img src='./RE/2.png' width ='150' height="40"></a>
+			<a id='signin' href ='Jobs.html'><img src='./RE/3.png' width ='150' height="40"></a>
+			<a id='signin' href ='Movie.html'><img src='./RE/4.png' width ='150' height="40"></a>
+		</ul>
+	</nav>
+	</header>
+    <!--------------------------------------->
+<div class='clear'></div><!--float 속성 해제-->
+<section>
+<div id="slide">
+	<input type="radio" name="pos" id="pos1" checked>
+	<input type="radio" name="pos" id="pos2">
+	<input type="radio" name="pos" id="pos3">
+	<input type="radio" name="pos" id="pos4">
+	<ul>
+		<li><img src='./RE/C11.jpg' width="950" height="590"></li>
+		<li><img src='./RE/maingate1.jpg' width="950" height="590"></li>
+		<li><img src='./RE/First1.jpg' width="950" height="590"></li>
+		<li><img src='./RE/Signup1.jpg' width="950" height="590"></li>
+	</ul>
+	<p class="pos">
+		<label for="pos1"></label>
+		<label for="pos2"></label>
+		<label for="pos3"></label>
+		<label for="pos4"></label>
+	</p>
+</div>
+</section>
+
+ 
+    <!--------------------------------------->
+    
+    <aside>
+    	<ul>
+    		<li><img src='./RE/Events.jpg' width=220 height=155> </li>
+    		<li><a id='signin' href ='Helpdesk.html'><img src='./RE/helper1.png' width=220 height=133></a></li>
+    		<li><a id='signin' href ='Movie.html'><img src='./RE/Poster.png' width=220 height=290></a></li>
+    	</ul>
+    </aside>
+
+    <!--------------------------------------->
+
+    <div class='clear'></div><!----float 속성해제-->
+    <footer>
+    	<div class="footermenu">
+			<div class="inner">
+    	<div id='footer_box'>
+    	<div id='footer_logo'>
+    		<img src='./RE/D1.png' width='75'>
+    		</div>
+    	<ul id = 'address'>
+    		<li>United State Monsters MX1 2JD Moxford Moxford
+    		<br>AddressNumber : MX33 1RS</li>
+    		<li>Tel:+44 1543-006</li>
+    		<li>COPYRIGHT (C) Disney Pixar Animation Studios </li>
+    	</ul>
+    </div>
+    </footer>
+
+</body>
+</html>
